@@ -1,0 +1,41 @@
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed">
+            <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="home">
+          <img alt="Brand" src="../img/navbarlogo2.svg">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse" ng-class="{collapse: isCollapsed}">
+      
+      <form class="form-inline nav navbar-nav navbar-right">
+      <a class="fa fa-shopping-cart fa-3x leftPad" ng-click="Ctrl.open()"></a>
+          <div class="nav navbar-nav searchPad">
+              <label for="search">Search</label>
+              <input ng-model="Ctrl.productService.searchBar" type="text" class="form-control" id="search">
+              <a class="fa fa-search fa-2x" ui-sref="shop"></a>
+          </div>
+          
+          
+  
+
+      </form>
+      <div class="nav navbar-nav navbar-left">
+     
+           
+            <li class="navFont"><a ui-sref="shop">SHOP</a></li>
+            <li><a ui-sref="login">Admin Login</a></li>
+       
+      </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

@@ -1,0 +1,19 @@
+/*.product-details-page button i .fa{
+	padding: 0;
+	margin: 0;
+}*/
+.product-details-page h1, h2, h3{
+	text-transform: capitalize;
+	padding-left: 0;
+}
+.product-details-page h2{
+	font-size: 1.5em;
+}
+.product-details-page {
+	padding-top: 8em;
+}
+@media (max-width: 767px) {
+.product-details-page {
+	padding-top: 7em;
+	}
+}

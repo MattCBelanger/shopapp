@@ -1,0 +1,61 @@
+.test, .checkoutinfo, .billinginfo {
+	padding: 50px 300px 80px 300px;
+}
+.checkout .billing {
+	background-color: #F7F7F7;
+}
+
+.headerz h1 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+.smallhead h2 {
+	font-size:1em;
+}
+
+.order {
+	background-color: orange;
+	margin: auto;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.forgot {
+	margin: auto;
+	display: block;
+	margin-bottom: 60px;
+}
+
+.total {
+	text-align: right;
+	color: #6d6d6d;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+}
+
+.final {
+	font-size:2em;
+}
+
+.incart {
+	text-align: right;
+}
+
+.inyourcart {
+	text-align: center;
+	color: #6d6d6d;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+}
+
+.finalamt {
+	margin-top: 50px;
+}
+
+.form-groupp {
+	padding:10px;
+}

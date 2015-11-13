@@ -1,0 +1,27 @@
+
+<div class="admin-page">
+  <div class="container">
+    <div class="row">
+      <section> 
+        <h1>
+          Admin Page
+        </h1>
+        <div class="product-list-view">
+          <div class="row">
+            <div class="col-md-6
+                        product-style" 
+                        ng-repeat="product in Ctrl.products">
+                  <img ng-src="{{product.image}}" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <h2 class="col-md-10"><strong>{{product.name}}</strong></h2>
+                  <p class="col-md-10">${{product.price}}</p>
+                  <p class="col-md-10">In stock: {{product.quantity}}</p>
+                  <p class="col-md-10">Status: {{product.status}}</p>
+
+                  <button ng-click="Ctrl.editProduct(product.productid,product)" class="btn btn-info">Edit Product</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

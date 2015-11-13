@@ -1,0 +1,43 @@
+<div class="row">
+
+	<div class="container"> 
+		<div class="col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+		<section class= "admin-login">
+			<div class="row">
+				<div class="row col-md-10 col-md-offset-1">
+					<i class="fa fa-cog fa-5x"></i>
+				</div>
+				<div class="row col-md-10 col-md-offset-1">
+					<h1 class="text-center">
+						Admin Login
+					</h1>
+				</div>
+			</div>
+			<div class="row">
+				<form ng-submit="Ctrl.authenticate(user,password)" class="form-horizontal">
+					<div class="form-group">
+						<div class="row">
+							<label>Email</label>
+						</div>
+						<div class="row">
+								<input type="text" placeholder="hello@example.com" ng-model="user" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<label>Password</label>
+						</div>
+						<div class="row">
+								<input type="password" placeholder="It's a secret!" ng-model="password" class="form-control">
+						</div>
+					</div>
+					<div class="row center-block">
+							<button class="btn btn-default center-block">Login</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		</div>
+	</div>
+</div>

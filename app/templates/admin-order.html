@@ -1,0 +1,40 @@
+
+<div class="admin-order">
+<div class="container">
+	<h1 class="ordertitle">
+		Orders Feed
+	</h1>
+	<div class="row col-md-10 col-md-offset-1">
+		<div class="ordertitle" ng-repeat="order in Ctrl.orders">
+			<div class="orderdetails">
+
+			<h4 class="orderIdTitle">Order ID: {{order.orderId}}</h4>
+
+				<div class="ordervalues" ng-repeat="item in order.cart">
+					<div class="info" ng-show="item.firstname"><span class="order-labelling">First Name: {{item.firstname}}</span></div>
+					<div class="info" ng-show="item.lastname"><span class="order-labelling">Last Name:</span> {{item.lastname}}</div>
+					<div class="info" ng-show="item.address"><span class="order-labelling">Address:</span> {{item.address}}</div>
+					<div class="info" ng-show="item.addressl2"><span class="order-labelling">Address Line 2:</span> {{item.addressl2}}</div>
+					<div class="info" ng-show="item.city"><span class="order-labelling">City:</span> {{item.city}}</div>
+					<div class="info" ng-show="item.province"><span class="order-labelling">Province:</span> {{item.province}}</div>
+					<div class="info" ng-show="item.postalcode"><span class="order-labelling">Postal Code:</span> {{item.postalcode}}</div>
+					<div class="info" ng-show="item.telephone"><span class="order-labelling">Phone:</span> {{item.telephone}}</div>
+					&nbsp;
+					<div class="info" ng-show="item.billfirstname"><span class="order-labelling">Name on Card:</span> {{item.billfirstname}}</div>
+					<div class="info" ng-show="item.billcreditcard"><span class="order-labelling">Card:</span> {{item.billcreditcard}}</div>
+					<div class="info" ng-show="item.billyear"><span class="order-labelling">Card Year:</span> {{item.billyear}}</div>
+					<div class="info" ng-show="item.billcvc"><span class="order-labelling">Card CVC:</span> {{item.billcvc}}</div>
+					&nbsp;
+					<div ng-show="item.name" ><span class="order-labelling">Item Bought:</span> {{item.name}}</div>
+					<div ng-show="item.price"><span class="order-labelling">Item Price:</span> {{item.price}}</div>
+					<div ng-show="item.quantity"><span class="order-labelling">Quantity Bought:</span> {{item.customerQuantity}}</div>
+				</div>
+				<div class="order-total-align">
+				<p><span class="order-labelling">Total Paid:</span> {{order.final_total}}</p></div>
+				<hr class="order-hr">
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/vendor/skeleton.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/angular-toastr.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/checkout.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/add_edit_product.css">
+	<link rel="stylesheet" type="text/css" href="css/viewcart.css">
+	<link rel="stylesheet" type="text/css" href="css/admin_order.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+
+
+
+
+
+	<!-- Icon fonts -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+	<!-- Icon fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<title></title>
+	<!-- Angular Vendor Dependencies -->
+	<script type="text/javascript" src="js/vendor/angular.min.js"></script>
+	<script type="text/javascript" src="js/vendor/angular-ui-route.min.js"></script>
+	<script src="js/vendor/angular-animate.min.js"></script>
+ 	<script src="js/vendor/ui-bootstrap-tpls-0.14.2.min.js"></script>
+ 	<script src="js/vendor/angular-messages.js"></script>
+ 	<script src="js/vendor/angular-toastr.tpls.min.js"></script>
+ 	
+<!-- 	// <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script> -->
+ 
+
+	<!-- App Code -->
+	<script type="text/javascript" src="app.js"></script>
+	<!-- Controllers -->
+	<script type="text/javascript" src="js/controllers/MainCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/AdminCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/AuthCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/ProductCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/ShopCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/OrderCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/CartCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/CheckCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/EditCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/navbarCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/Order_ConfirmationCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/adminProductCtrl.js"></script>
+
+
+
+
+
+	<!-- Services -->
+	<script type="text/javascript" src="js/services/ApiService.js"></script>
+	<script type="text/javascript" src="js/services/ProductService.js"></script>
+	<!-- Filters -->
+
+	<!-- Directives -->
+</head>
+<body ng-app="ShopApp">
+
+	<div ui-view name="nav"></div>
+
+    <div ui-view name="content" autoscroll="true"></div>
+
+    <div ui-view name="foot"></div>
+  
+	<!-- <ui-view></ui-view> -->
+</body>
+</html>

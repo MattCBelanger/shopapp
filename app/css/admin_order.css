@@ -1,0 +1,23 @@
+.ordertitle {
+	text-align: center;
+}
+.orderIdTitle, .order-labelling {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-align: left;
+}
+.orderIdTitle {
+	font-size: 1.5em;
+}
+.order-labelling {
+	font-size: 1em;
+}
+.order-hr {
+	background-color: #ababab;
+}
+.ordervalues, .order-total-align {
+	text-align: left;
+}
+.admin-order {
+	padding-top: 4em;
+}

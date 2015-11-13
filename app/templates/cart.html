@@ -1,0 +1,51 @@
+<h1 class="itemcard header text-center">
+	items in cart
+</h1>
+<h2 class="text-center empty-cart-text" ng-show="(Ctrl.cart.length==0)">Your cart is empty!</h2>
+<div class="productorder col-xs-12" ng-repeat="product in Ctrl.cart">
+	<div class="row">
+		<div class="itemsincart">
+
+		
+
+			<div class="productname col-md-3">
+				<strong>{{product.name}}</strong>
+
+
+			</div>
+
+			<div class="productname col-md-2">
+				<p>${{product.price}}</p>
+			</div>
+
+
+			<div class="productname col-md-2">
+				<button class="btn btn-primary" ng-click="(product.customerQuantity = product.customerQuantity-1)" ng-disabled="product.customerQuantity==1">
+					<i class="quantity fa fa-minus-square fa-2x"></i>
+				</button>
+			</div>
+
+			<div class="productname col-md-2">
+				<p>{{product.customerQuantity}}</p>
+			</div>
+
+			<div class="productname col-md-2">
+				<button  class="btn btn-primary"ng-click="(product.customerQuantity = product.customerQuantity+1)">
+				<i class=" quantity fa fa-plus-square fa-2x"> </i>
+				</button>
+			</div>
+			<div>
+				<button class="btn btn-danger" ng-click="Ctrl.removeItem(product.productId)">Delete Item</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class=" quicklinks modal-footer">
+	<button class="btn btn-primary" type="button" ng-click="Ctrl.ok()">Continue Shopping</button>
+	<button class="btn btn-warning" type="button" ng-click="Ctrl.checkOut()">Proceed to Checkout</button>
+</div>
+
+

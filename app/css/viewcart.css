@@ -1,0 +1,16 @@
+.quantity{
+	padding: 0px;
+}
+
+.quicklinks{
+	display: block;
+	margin: auto;
+	padding-top: 100px;
+
+}
+.productorder{
+	margin-left: 50px;
+}
+h2 .empty-cart-text {
+	color: #6d6d6d;
+}

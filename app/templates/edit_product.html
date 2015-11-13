@@ -1,0 +1,101 @@
+<!-- <h1>
+	Edit Product
+</h1>
+<div class="row">
+	<div class="three columns">
+		<form ng-submit="Ctrl.editProduct(name,description,price,img,category,quantity,status)">
+			<input type="text" ng-model="name" placeholder="name">
+			<textarea ng-model="description" placeholder="description"></textarea>
+			<input type="text" ng-model="price" placeholder="price">
+			<input type="text" ng-model="img" placeholder="image link">
+			<input type="text" ng-model="category" placeholder="category">
+			<input type="text" ng-model="quantity" placeholder="quantity">
+			<select ng-model="status">
+					<option value="" selected>Status</option>
+					<option value="active">Active</option>
+					<option value="inactive">Inactive</option>
+			</select>
+			<button>Edit Product</button>
+		</form>
+	</div>
+</div>
+
+<div class="addprodtitle">
+<h1>
+	Add Product
+</h1>
+</div> -->
+
+<div class="addprodtitle">
+	<div class="container">
+		<div class="row">
+			<h1>
+				Edit Product
+			</h1>
+		</div>
+		
+	<div class="row">
+		<div class="addProductAll">
+			<form class="form-inline" ng-submit="Ctrl.editProduct(Ctrl.request_body.name,Ctrl.request_body.description,Ctrl.request_body.price,Ctrl.request_body.image,Ctrl.request_body.category,Ctrl.request_body.quantity,Ctrl.request_body.status)">
+
+			<div class="col-md-12">
+			  <div class="form-group form-group-lg">
+			    <label for="exampleInputName2">Product Name</label>
+			    <input type="text" class="form-control" ng-model="Ctrl.request_body.name">
+			  </div>
+			</div>
+
+			<div class="col-md-12">
+			  <div class="form-group form-group-lg">
+			    <label for="exampleInputEmail2">Description</label>
+			    <textarea type="text" class="form-control" ng-model="Ctrl.request_body.description"></textarea>
+			  </div>
+			</div>
+
+			<div class="col-md-12">
+			  <div class="form-group form-group-lg">
+			    <label for="exampleInputName2">Price</label>
+			    <input type="text" class="form-control" ng-model="Ctrl.request_body.price">
+			  </div>
+			</div>
+
+			<div class="col-md-12">
+			  <div class="form-group form-group-lg">
+			    <label for="exampleInputName2">Image URL</label>
+			    <input type="text" class="form-control" ng-model="Ctrl.request_body.image">
+			  </div>
+			</div>
+
+			<div class="col-md-12">
+			  <div class="form-group form-group-lg">
+			    <label for="exampleInputName2">Category</label>
+			    <input type="text" class="form-control" ng-model="Ctrl.request_body.category">
+			  </div>
+			</div>
+			<div class="col-md-12">
+			  <div class="form-group form-group-lg">
+			    <label for="exampleInputName2">Quantity</label>
+			    <input type="text" class="form-control" ng-model="Ctrl.request_body.quantity">
+			  </div>
+			</div>
+
+			<div class="col-md-12">
+			  <div class="form-group form-group-lg">
+			    <label for="exampleInputName2">Status</label>
+			    <select  class ="btn btn-info btn-lg "ng-model="Ctrl.request_body.status">
+			    	<option value="" selected>Status</option>
+					<option value="active">Active</option>
+					<option value="inactive">Inactive</option>
+			    </select>
+			  </div>
+			</div>
+
+			<div class="col-md-12">
+			  <button class="btn btn-success">Edit Product</button>
+			  </div>
+
+			</form>
+		</div>
+	</div>
+</div>
+</div>

@@ -1,0 +1,16 @@
+@media(max-width:767px){}
+@media(min-width:768px){}
+@media(min-width:992px){
+}
+@media(min-width:1200px){}
+.admin-page {
+	padding-top: 4em;
+}
+.admin-page .product-style {
+	height: 275px;	
+}
+.admin-page .product-style button { 
+}
+.admin-page .product-style:active, .product-style:hover {
+	border: 8px solid #fcfcfc;
+}

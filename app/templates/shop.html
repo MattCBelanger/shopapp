@@ -1,0 +1,65 @@
+
+<div class="shop-jumbotron">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Equip yourself</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <button ng-click="Ctrl.choosecategory(Ctrl.All)" class="btn btn-danger categorybtn">All</button>
+      <button ng-click="Ctrl.choosecategory(Ctrl.Weapons)" class="btn btn-primary categorybtn">Weapons</button>
+      <button ng-click="Ctrl.choosecategory(Ctrl.Tech)" class="btn btn-success categorybtn">Tech</button>
+      <button ng-click="Ctrl.choosecategory(Ctrl.Food)" class="btn btn-info categorybtn">Food</button>
+      <button ng-click="Ctrl.choosecategory(Ctrl.Health)" class="btn btn-warning categorybtn">Health</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="form-inline shop-search">
+       <label for="search">Sort</label>
+       <select class="form-control" ng-options="item.label for item in Ctrl.sortOptions" ng-model="Ctrl.selectedOption"></select>
+     </div>
+  </div>
+</div>
+  
+<section class="shop-products-grid"> 
+  <div class="container">
+    <div class="product-list-view">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6
+                    product-style 
+                    text-center" 
+                    ng-repeat="product in Ctrl.products 
+                 | filter: Ctrl.productService.searchBar
+                 | filter: Ctrl.cat
+
+                 | orderBy:Ctrl.selectedOption.sortField:Ctrl.selectedOption.reverse" ng-show="(product.status=='active')"
+                 >
+                 <span class="text-content"><span>+ Click for more details</span></span>
+            <div class="bottom-aligned">
+              <div ng-click="Ctrl.changeID(product)">
+                <img ng-src="{{product.image}}" alt="{{product.description}}" class="img-responsive col-md-12 center-block">
+                
+                <h2><strong>{{product.name}}</strong></h2>
+              
+                <p>${{product.price}}</p>
+                 <p>Category: {{product.category}}</p>
+  
+              </div>
+              <div class="row">
+                <button ng-click="Ctrl.addToCart(product)" class="btn btn-info">Add to Cart</button>
+              </div>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <hr>
+</section>

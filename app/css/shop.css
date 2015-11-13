@@ -1,0 +1,85 @@
+.product-style {
+	box-sizing: border-box;
+	padding: 10px;
+	border: 8px solid #fcfcfc;
+	text-transform: capitalize;
+	height: 500px;
+	cursor: pointer;
+}
+@media(max-width:767px){
+	height: 700px;
+}
+@media(min-width:768px){
+	height: 700px;
+}
+.product-style h1, h2, h3 {
+	padding: .1em;
+	line-height: 110%;
+}
+.product-style h2 {
+	font-size: 2em;
+}
+.product-style img {
+	padding: 5px;
+}
+.product-style:active, .product-style:hover {
+	border: 5px solid #acacac;
+}
+.shop-jumbotron .jumbotron {
+	background-image: url(../img/bg-city.jpg);
+	background-size: cover;
+	padding-top: 100px;
+	height: 350px;
+}
+.shop-jumbotron .jumbotron h1{
+	color: #fff;
+}
+.shop-search {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.product-style span.text-content {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 1.4em;
+	letter-spacing: 2px;
+	background: rgba(239, 72, 54,0.75);
+	color: white;
+/*	height: 75px;*/
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity: 0;
+	line-height: 110%;
+}
+
+.product-style span.text-content span {
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.product-style:hover span.text-content {
+  opacity: 1;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.categorybtn {
+	margin: 10px;
+}
+.bottom-aligned {
+	position: absolute;
+	bottom:0;
+}
+#toast-container {
+	margin-top: 80px;
+}
+
+

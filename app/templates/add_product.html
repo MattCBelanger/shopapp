@@ -1,0 +1,70 @@
+<div class="addprodtitle">
+<h1>
+	Add Product
+</h1>
+</div>
+
+<div class="row">
+	<div class="addProductAll">
+		<form class="form-inline" ng-submit="Ctrl.addProduct(name,description,price,img,category,quantity,status)">
+
+		<div class="col-md-12">
+		  <div class="form-group">
+		    <label for="exampleInputName2">Product Name</label>
+		    <input type="text" class="form-control" ng-model="name">
+		  </div>
+		</div>
+
+		<div class="col-md-12">
+		  <div class="form-group">
+		    <label for="exampleInputEmail2">Description</label>
+		    <textarea type="text" class="form-control" ng-model="description"></textarea>
+		    {{description}}
+		  </div>
+
+		<div class="col-md-12">
+		  <div class="form-group">
+		    <label for="exampleInputName2">Price</label>
+		    <input type="number" class="form-control" ng-model="price">
+		  </div>
+		  </div>
+
+		<div class="col-md-12">
+		  <div class="form-group">
+		    <label for="exampleInputName2">Image URL</label>
+		    <input type="text" class="form-control" ng-model="img">
+		  </div>
+		  </div>
+
+		<div class="col-md-12">
+		  <div class="form-group">
+		    <label for="exampleInputName2">Category</label>
+		    <input type="text" class="form-control" ng-model="category">
+		  </div>
+		  </div>
+
+		<div class="col-md-12">
+		  <div class="form-group">
+		    <label for="exampleInputName2">Quantity</label>
+		    <input type="number" class="form-control" ng-model="quantity">
+		  </div>
+		  </div>
+
+		<div class="col-md-12">
+		  <div class="form-group">
+		    <label for="exampleInputName2">Status</label>
+		    <select  class="btn btn-info btn-lg"ng-model="status">
+		    	<option value="" selected>Status</option>
+				<option value="active">Active</option>
+				<option value="inactive">Inactive</option>
+		    </select>
+		  </div>
+		  </div>
+
+		<div class="col-md-12">
+		  <button class="btn btn-danger">Add Product</button>
+		  </div>
+
+		</form>
+	</div>
+</div>

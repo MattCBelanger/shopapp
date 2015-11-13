@@ -1,0 +1,16 @@
+<h1>
+	Delete Product
+</h1>
+<!-- <div ng-repeat=""></div> -->
+<div class="row">
+	<div class="three columns">
+		<div ng-repeat="product in Ctrl.products">
+			<strong>{{product.name}}</strong>
+			<p>{{product.description}}</p>
+			<p>{{product.quantity}}</p>
+		</div>
+
+			<button ng-click="Ctrl.clearProduct(product)">Delete Product</button>
+	</div>
+</div>
+

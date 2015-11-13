@@ -1,0 +1,19 @@
+<!-- <div ng-repeat="product in Ctrl.products">
+	<strong>{{product.name}}</strong>
+	<p>{{product.description}}</p>
+	<p>{{product.quantity}}</p>
+</div> -->
+<section class="product-details-page">
+	<div class="container">
+		<div class="row">
+			<button ui-sref="shop" class="btn btn-default">Back to Shop</button>
+			<img src="{{Ctrl.product.image}}" class="col-md-6">
+			<h1>{{Ctrl.product.name}}</h1>
+			<h2>{{Ctrl.product.category}}</h2>
+			<strong><p>${{Ctrl.product.price}}</p></strong>
+			<p>{{Ctrl.product.description}}</p>
+			<button ng-click="Ctrl.addToCart(Ctrl.product)" class="btn btn-success">Add to Cart</button>
+
+		</div>
+	</div>
+</section>
