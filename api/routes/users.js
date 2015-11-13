@@ -41,6 +41,17 @@ router.post('/',function(req,res){
      });
 });
 
+router.get('/test',function(req,res){
+     
+     var user_object = {
+          email:"test@email.com",
+          password:'123'
+     };
+     models.Users.create(user_object).then(function(users){
+          res.json({users:users})
+     });
 
+
+});
 
 module.exports = router;
