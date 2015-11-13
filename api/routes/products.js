@@ -16,6 +16,9 @@ router.get('/',function(req,res){
      	 	console.log(succ);
 			console.log("test");
      		res.json(succ);
+    		 } else{
+    		 	console.log("no products");
+    		 	res.json(succ);
     		 }
      	
      },function(err){
