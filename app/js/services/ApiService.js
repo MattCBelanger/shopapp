@@ -7,7 +7,7 @@ angular.module('ShopApp').service('api', ApiService);
 
 
 //constants
-var BASE_URL = "http://localhost:8080";
+var BASE_URL = "http://localhost:80";
 //var BASE_URL = 'http://174.129.248.23/brainstation/shop';
 var HEADERS = {headers : {'Content-Type': 'application/x-www-form-urlencoded','Authorization':'AFJVJA46AS'}};
 
